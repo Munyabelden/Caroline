@@ -1,0 +1,144 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #8e44ad;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #6c3483;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #512e5f;
+}
+
+section {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* About Section Styling */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-image {
+    flex-basis: 40%;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex-basis: 55%;
+    padding-left: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery div {
+    flex-basis: calc(33.333% - 10px);
+}
+
+footer {
+    position: relative;
+    background-color: #8e44ad;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+}
+
+.contact-info {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav a {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .about, .services {
+        flex-basis: 100%;
+    }
+
+    .gallery div {
+        flex-basis: 100%;
+    }
+
+    /* Adjust the About section on smaller screens */
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image, .about-text {
+        flex-basis: 100%;
+        padding: 0;
+    }
+
+    .about-text {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section {
+        padding: 20px;
+    }
+
+    nav a {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
