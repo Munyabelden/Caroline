@@ -6,6 +6,7 @@ body {
     background-color: #f4f4f9;
     color: #333;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 header {
@@ -82,6 +83,18 @@ section {
 
 .gallery div {
     flex-basis: calc(33.333% - 10px);
+}
+
+.map {
+    margin: 0;
+    text-align: center;
+    width: 100vw;
+}
+
+.map iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
 }
 
 footer {
