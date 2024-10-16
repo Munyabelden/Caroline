@@ -16,6 +16,18 @@ header {
     text-align: center;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
 nav {
     display: flex;
     justify-content: center;
